@@ -30,7 +30,7 @@ def request(url):
 
 	headers = {"User-agent":user_agent,
 				'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
-				'Accept-Encoding':'gzip, deflate, sdch',
+				'Accept-Encoding':'none',
 				'Accept-Language': 'en-US,en;q=0.8',
 				'Connection':'keep-alive'}
 	r = requests.get(url,headers=headers,proxies=proxies)
